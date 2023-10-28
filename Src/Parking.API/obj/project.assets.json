@@ -107,6 +107,42 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Parking.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Parking.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Parking.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Parking.Application.dll": {}
+        }
+      },
+      "Parking.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Parking.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Parking.Domain.dll": {}
+        }
+      },
+      "Parking.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Parking.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Parking.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Parking.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -460,11 +496,28 @@
         "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Parking.Application/1.0.0": {
+      "type": "project",
+      "path": "../Parking.Application/Parking.Application.csproj",
+      "msbuildProject": "../Parking.Application/Parking.Application.csproj"
+    },
+    "Parking.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Parking.Domain/Parking.Domain.csproj",
+      "msbuildProject": "../Parking.Domain/Parking.Domain.csproj"
+    },
+    "Parking.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Parking.Infrastructure/Parking.Infrastructure.csproj",
+      "msbuildProject": "../Parking.Infrastructure/Parking.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.12",
+      "Parking.Application >= 1.0.0",
+      "Parking.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -500,7 +553,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\Application\\Src\\Parking.Application\\Parking.Application.csproj": {
+              "projectPath": "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\Application\\Src\\Parking.Application\\Parking.Application.csproj"
+            },
+            "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\Application\\Src\\Parking.Infrastructure\\Parking.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\Application\\Src\\Parking.Infrastructure\\Parking.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

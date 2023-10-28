@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Parking.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Parking.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Parking.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Parking.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Parking.Domain/Parking.Domain.csproj",
+      "msbuildProject": "../Parking.Domain/Parking.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Parking.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Lazer\\.nuget\\packages\\": {},
@@ -39,7 +58,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\Application\\Src\\Parking.Domain\\Parking.Domain.csproj": {
+              "projectPath": "C:\\Users\\Lazer\\OneDrive\\Área de Trabalho\\Application\\Src\\Parking.Domain\\Parking.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
