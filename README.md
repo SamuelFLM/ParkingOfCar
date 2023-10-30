@@ -4,7 +4,7 @@
 ## Desafio de projeto
 Resolvendo exercicios de logica de programação e aplicando testes unitarios em C#.
 
-## Quantidade de testes aprovados até o momento:.
+## Quantidade de testes aprovados até o momento:
 
 <img src="Imagens/tests1.png" alt="logo_samuelflm">
 
