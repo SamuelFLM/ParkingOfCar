@@ -1,8 +1,8 @@
 <img src="Imagens/logo.png" alt="logo_samuelflm">
 
 
-## Desafio de projeto
-Resolvendo exercicios de logica de programação e aplicando testes unitarios em C#.
+## Desafio de projet
+Resolvendo exercicios de logica de programação e aplicando testes unitarios em C#
 
 ## Quantidade de testes aprovados até o momento:
 
